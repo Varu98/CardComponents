@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,700;1,900&family=Open+Sans:wght@300;400;600&display=swap");
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* --------CSS Reset Ends---------- */
+/* ------------------ */
+/* ------------------ */
+
+.card-basic {
+  width: 25rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 2rem;
+}
+.card-basic img {
+  flex: 1 1 100%;
+}
+
+.card-body {
+  padding: 1rem;
+  color: #5e5e5e;
+}
+.card-body h2 {
+  color: black;
+}
+.card-body h4 {
+  margin-bottom: 1rem;
+}
+.card-body span {
+  font-weight: 900;
+  color: rgb(51, 49, 49);
+}
+
+.card-body:hover {
+  background-color: #5e5e5e15;
+}
+
+.actions {
+  flex: 1 1 10%;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-weight: bolder;
+  border: none;
+  background: none;
+  text-align: center;
+  font-size: 1rem;
+  color: #464444;
+}
+.btn {
+  color: rgba(45, 11, 138, 0.623);
+}
+.actions:hover {
+  background-color: rgba(137, 43, 226, 0.089);
+  border-radius: 5px;
+}
+
+/* ------------------ */
+/* ------------------ */
+/* --------CSS Media Query Begins---------- */
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
