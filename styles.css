@@ -125,15 +125,19 @@ select {
   font-weight: 400;
   margin: 2rem;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .card-basic-header-primary {
   padding: 1rem;
 }
+.card-basic-header-secondary:hover {
+  background-color: #5e5e5e15;
+}
+
 .card-basic-header-img {
   background-image: url(https://picsum.photos/500/270);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto;
   width: auto;
   height: 200px;
   flex-grow: 1 1 100%;
@@ -141,14 +145,18 @@ select {
 .card-basic-header-desc {
   margin: 0 1rem 1rem;
 }
+.add-margin {
+  margin-top: 2rem;
+}
 .card-basic-header-buttons {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 .card-basic-header-button {
   border: none;
   background: none;
   color: rgba(45, 11, 138, 0.623);
   font-weight: bolder;
+  padding: 0.5rem;
 }
 .card-basic-header-button:hover {
   background-color: rgba(137, 43, 226, 0.089);
