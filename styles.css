@@ -60,7 +60,7 @@ select {
 /* --------CSS Reset Ends---------- */
 /* ------------------ */
 /* ------------------ */
-
+/* card basic css starts */
 .card-basic {
   width: 25rem;
   display: flex;
@@ -71,6 +71,7 @@ select {
   border-radius: 5px;
   margin: 2rem;
 }
+
 .card-basic img {
   flex: 1 1 100%;
 }
@@ -112,7 +113,61 @@ select {
   background-color: rgba(137, 43, 226, 0.089);
   border-radius: 5px;
 }
+/*----------- card basic css ends ---------------*/
 
+/* card basic header css starts */
+.card-basic-header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 20rem;
+  height: auto;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin: 2rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+.card-basic-header-primary {
+  padding: 1rem;
+}
+.card-basic-header-img {
+  background-image: url(https://picsum.photos/500/270);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: auto;
+  height: 200px;
+  flex-grow: 1 1 100%;
+}
+.card-basic-header-desc {
+  margin: 0 1rem 1rem;
+}
+.card-basic-header-buttons {
+  padding: 1rem;
+}
+.card-basic-header-button {
+  border: none;
+  background: none;
+  color: rgba(45, 11, 138, 0.623);
+  font-weight: bolder;
+}
+.card-basic-header-button:hover {
+  background-color: rgba(137, 43, 226, 0.089);
+  border-radius: 5px;
+}
+.card-basic-header-icons {
+  font-weight: bolder;
+  border: none;
+  background: none;
+  text-align: center;
+  font-size: 1rem;
+  color: #464444;
+  padding: 1rem;
+}
+
+.card-basic-header-interact {
+  margin: 5px;
+  flex: 1 1 20%;
+}
 /* ------------------ */
 /* ------------------ */
 /* --------CSS Media Query Begins---------- */
