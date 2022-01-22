@@ -60,6 +60,10 @@ select {
 /* --------CSS Reset Ends---------- */
 /* ------------------ */
 /* ------------------ */
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
 /* card basic css starts */
 .card-basic {
   width: 25rem;
@@ -119,7 +123,7 @@ select {
 .card-basic-header {
   display: flex;
   flex-wrap: wrap;
-  width: 20rem;
+  width: 25rem;
   height: auto;
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -176,7 +180,70 @@ select {
   margin: 5px;
   flex: 1 1 20%;
 }
+
+.to-right {
+  margin-left: auto;
+  text-align: right;
+}
+.onHover:hover {
+  color: rgba(228, 56, 56, 0.651);
+}
+
+/* =====small card css ========*/
+.content-wrapper {
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 20rem;
+  height: 10rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.text-wrapper {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-align: left;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  flex: 1 1 70%;
+}
+h3 {
+  color: #918b8b;
+}
+
+.card-img {
+  background-image: url(https://picsum.photos/120/100);
+  background-repeat: no-repeat;
+  background-size: auto;
+  width: auto;
+  height: 100px;
+  flex: 1 1 30%;
+}
+
+/* =====small card css ends ========*/
 /* ------------------ */
+/* floating class for text overlapping */
+.header-float {
+  display: flex;
+  flex-wrap: wrap;
+  width: 25rem;
+  height: 25rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin: 2rem;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.floating {
+  position: relative;
+}
+.float-text {
+  position: absolute;
+  top: 30%;
+  color: #ffffff;
+  text-shadow: 0 0 2px rgb(0, 0, 0);
+}
 /* ------------------ */
 /* --------CSS Media Query Begins---------- */
 
