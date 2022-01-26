@@ -60,6 +60,7 @@ select {
 /* --------CSS Reset Ends---------- */
 /* ------------------ */
 /* ------------------ */
+
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -146,6 +147,11 @@ select {
   height: 200px;
   flex-grow: 1 1 100%;
 }
+
+.img-border-radius {
+  border-radius: 10px 10px 0px 0px;
+}
+
 .card-basic-header-desc {
   margin: 0 1rem 1rem;
 }
